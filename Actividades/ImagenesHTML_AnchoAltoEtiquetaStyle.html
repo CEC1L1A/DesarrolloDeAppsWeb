@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Curso HTML</title>
+        <style>
+            img {
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+
+        <p>La primera imagen utiliza el atributo  width  (ancho establecido en 128 pixeles), pero el estilo en 
+            la sección del encabezado lo anula y establece e ancho en 100%.
+        </p>
+        <img src="dibujo.jpg" alt = "Mujer programando" width="128" height="128">
+
+        <p>La segunda imagen usa el atributo de style para establecer el ancho en 128 pixeles, esto 
+            no será anulado por el estilo en la sección del encabezado:
+        </p>
+        <img src = "dibujo.jpg" alt = "Mujer programando" style = "width:128px;height:128px;">
+
+        <p>Los estilos en línea de código tienen mayor prioridad que los estilos en la etiqueta head.</p>
+    </body>
+</html>
