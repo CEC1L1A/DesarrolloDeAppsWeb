@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Curso HTML</title>
+    </head>
+    <body>
+
+        <h2>Mapa de imagen</h2>
+        <p>Clic en el gato para ejecutar la función de JavaScript: </p>
+
+        <img src="saludo.jpg" alt="Gato saludo" usemap="#gatomap" width="400" height="379">
+
+        <map name="gatomap">
+            <area shape="rect" coords="188,188,438,438" href="https://www.youtube.com/watch?v=H_5ZfEGCKAg" onclick="myFunction()">
+        </map>
+
+        <script>
+            function myFunction(){
+                alert("¡Hiciste clic en el gatito!")
+            }
+        </script>
+    </body>
+</html>
