@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Curso HTML</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+
+        <h2>El elemento picture</h2>
+
+        <picture>
+           <source media="(min-width: 650px)" srcset="dibujo.jpg">
+           <source media="(min-width: 465px)" srcset="saludo.jpg">
+           <img src="workplace.jpg" style="width:auto;">
+        </picture>
+
+        <p>Cambie el tamaño del navegador para ver diferentes versiones de la imagen cargándose en diferentes tamaños de ventana gráfica.
+            El navegador busca el primer elemento de origen donde la consulta de medios coincide con el ancho de la ventana gráfica actual
+            del usuario.
+            y obtiene la imagen especificada en el atributo srcset.
+        </p>
+
+        <p>El elemento img es necesario como ultima etiqueta secundaria del bloque de declaracion de imagen.
+            El elemento img se utiliza para proporcionar compatibilidad con versiones anteriores de los navegadores
+            que no admiten el elemento de imagen o si ninguna de las etiquetas de origen coincide.
+        </p>
+    </body>
+</html>
